@@ -1,0 +1,157 @@
+@font-face {
+    font-family: 'Moon';
+    src: url('fonts/Moon2.0-Light.otf') format('opentype');
+  }
+@font-face {
+    font-family: 'Varela';
+    src: url('fonts/VarelaRound-Regular.ttf') format('truetype');
+  }
+
+body{
+    background-image: url("images/background.jpg");
+    background-size: 100%;
+}
+
+.main{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sub {
+    display: flex;
+}
+
+.sub div{
+    padding: 10px;
+}
+
+.main div {
+    font-family: Moon;
+    font-size: 35px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+#home {
+    margin-right: 10px;
+}
+
+#name{
+    letter-spacing: 3px;
+    margin-left: 5px;
+    transition: transform 1s;
+}
+
+.intro {
+    padding-bottom: 500px;
+    
+}
+#welcome{
+    font-family: Varela;
+    font-size: 55px;
+    letter-spacing: 2px;
+    position: absolute;
+    top: 250px;
+    left: 550px;
+}
+
+#space{
+    font-family: Varela;
+    font-size: 53px;
+    position: absolute;
+    top: 320px;
+    left: 550px;
+}
+
+#preview {
+    display: inline;
+    color: rgb(79, 223, 22);
+}
+@media(max-width: 1100px){
+    .intro{
+        right: 200px;
+    }
+}
+
+.preview{
+    display: flex;
+    justify-content: center;
+}
+
+.preview div{
+    max-width: 33%;
+    overflow: hidden;
+    justify-content: space-between;
+}
+
+.preview div img{
+    transition: transform 1s;
+    opacity: .85;
+}
+
+.preview div img:hover{
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+#first{
+    margin-right: 15px;
+}
+
+#last{
+    margin-left: 15px;
+}
+
+#name:hover{
+    transform: scale(1.2);
+}
+
+#home:hover{
+    transform: scale(1.3);
+    transition: transform 1s;
+}
+
+#about:hover{
+    transform: scale(1.3);
+    transition: transform 1s;
+}
+
+#message{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 25px;
+    font-family: Varela;
+    font-size: 25px;
+}
+
+.btn{
+    width: 100%;
+    height: 50px;
+    border: 3px solid rgb(101, 82, 185);
+    color: rgb(101, 82, 185);
+    transition: ease-out 0.4s;
+    font-size: 20px;
+    font-family: Varela;
+    outline: none;
+}
+.btn:hover{
+    box-shadow: inset 300px 50px 30px 70px rgb(101, 82, 185);
+    cursor: pointer;
+    color: white;
+}
+.reference{
+    margin-top: 20px;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-bottom: 70px;
+}
+
+.hyperlink{
+    text-decoration: none;
+    color: black;
+}
+
+#vid1, #vid2, #vid3{
+    margin: 20px;
+}
